@@ -6,4 +6,4 @@ num2 = int(input('Segundo número'))
 
 soma = num1 + num2
 
-print('Sua soma é', soma)
+print('A soma entre', num1, 'e', num2, 'é', soma)
