@@ -17,19 +17,19 @@ while(sair < 1):
 
     if ope == 'saque':
         
-        sa = int(input('digite o valor do saque '))
+        sa = float(input('digite o valor do saque '))
 
         sal = sal - sa
 
     elif ope == 'deposito':
 
-        de = int(input('digite o valor do depósito '))
+        de = float(input('digite o valor do depósito '))
 
         sal = sal + de
 
     elif ope == 'saldo':
 
-        print('o seu saldo é de {}'.format(sal))
+        print('o seu saldo é de {:.2f}'.format(sal))
 
     elif ope == 'sair':
 
