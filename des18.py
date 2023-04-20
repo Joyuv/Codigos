@@ -1,5 +1,3 @@
-#under maintance
-
 import math
 
 an = float(input('digite um valor em graus: '))
