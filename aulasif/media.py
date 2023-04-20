@@ -1,20 +1,43 @@
 # Programa para calcular média
 
-print('Programa que calcula média.')
+e = int(input('insira o número de notas para calcular a média 4/2'))
 
-v1 = int(input('\n insira o primeiro valor: '))
+if (e == 2):
 
-v2 = int(input('\n insira o segundo valor: '))
+    print('Programa que calcula média.')
 
-m = (v1 + v2) / 2
+    v1 = int(input('\n insira o primeiro valor: '))
 
-if (m >= 60):
+    v2 = int(input('\n insira o segundo valor: '))
 
-    print('\na sua média é {} parabéns você passou '.format(m))
+    m = (v1 + v2) / 2
 
-elif (m):
+    if (m >= 60):
 
-    print('sua média é {} que pena você não passou'.format(m))
+        print('\na sua média é {} parabéns você passou '.format(m))
 
+    elif (m):
 
+        print('sua média é {} que pena você não passou'.format(m))
 
+if (e == 4):
+
+    print('Programa que calcula média.')
+
+    v1 = int(input('\n insira o primeiro valor: '))
+
+    v2 = int(input('\n insira o segundo valor: '))
+
+    v3 = int(input('\n insira o terceiro valor: '))
+
+    v4 = int(input('\n insira o quarto valor: '))
+
+    m = (v1 + v2 + v3 + v4) / 4
+
+    if (m >= 60):
+
+        print('\na sua média é {} parabéns você passou '.format(m))
+
+    elif (m):
+
+        print('sua média é {} que pena você não passou'.format(m))
