@@ -69,12 +69,8 @@ while (a == 0):
 
         print('A sua compra deu {}R$'.format(pt))
 
+        a = 1
+
     elif (p):
 
         print('seu produto não foi encontrado')
-
-    
-
-  
-
-
