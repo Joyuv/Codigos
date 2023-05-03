@@ -15,7 +15,7 @@ while (a == 0):
 
         q = int(input('Quantos sacos você deseja levar? '))
 
-        pt = q * 3.00
+        pt += q * 3.00
 
     if (p == 'leite compensado'):
 
@@ -23,7 +23,7 @@ while (a == 0):
 
         q = int(input('Quantas latas você deseja levar? '))
 
-        pt = q * 5.75
+        pt += q * 5.75
 
     if (p == 'flokis mucirilo'):
 
@@ -31,7 +31,7 @@ while (a == 0):
 
         q = int(input('Quantos você deseja levar? '))
 
-        pt = q * 2.00
+        pt += q * 2.00
 
     if (p == 'sucrilhos de maracujá'):
 
@@ -39,7 +39,7 @@ while (a == 0):
 
         q = int(input('Quantos pacotes você deseja levar? '))
 
-        pt = q * 4.50
+        pt += q * 4.50
 
     if (p == 'maracujá'):
 
@@ -47,7 +47,7 @@ while (a == 0):
 
         q = int(input('Quantos você deseja levar? '))
 
-        pt = q * 0.75
+        pt += q * 0.75
 
     if (p == 'pinga'):
 
@@ -55,7 +55,7 @@ while (a == 0):
 
         q = int(input('Quantos garrafas você deseja levar? '))
 
-        pt = q * 5.00
+        pt += q * 5.00
 
     if (p == 'alcool 70'):
 
@@ -63,7 +63,7 @@ while (a == 0):
 
         q = int(input('Quantos sacos você deseja levar? '))
 
-        pt = q * 3.00
+        pt += q * 3.00
 
     if (p == 'fechar'):
 
