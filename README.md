@@ -1,1 +1,1 @@
-# Codigos this folder contains all of my codes. currenty on learning. first codes will be in python.
+# Codigos this folder contains all of my codes. currenty on learning process.
