@@ -1,10 +1,16 @@
+import java.util.Scanner;
+
 public class java {
 
 public static void main(String[] args) {
     
-System.out.print("olá mundo");
+Scanner scfoda = new Scanner (System.in);
 
-System.out.println("\nque coisa linda, to sem acreditar que depois de anos essa porra funcionou.");
+System.out.print("insira uma palavra abaixo.\n\n");
+
+String palavra =  scfoda.nextLine();
+
+System.out.println("\nsua palvra é ("+ palavra+ ") que palavra foda.");
 
     }
 
