@@ -7,9 +7,14 @@ cadastro = mysql.connector.connect(
     database = 'cadastro'
 )
 
-cursor = cadastro.cursor()
-
-cursor.execute ('describe pessoas')
-
-for x in cursor:
-    print(x)
+name =  input('insira seu nome: ')
+namev = name.split()
+c = cadastro.cursor()
+add_user = ('insert into teste'
+            '(nome)'
+            'values(%s)')
+data_user = (namev)
+c.execute(add_user, data_user)
+cadastro.commit()
+c.close()
+cadastro.close()
