@@ -3,7 +3,7 @@ for x in range (0,5):
     num = int(input('insira um número a seguir: '))
     while numc < num :
         numc += 1
-        print(numc, )
+        print(numc)
     if x == 4:
         print('Cabou os laços')
     if x < 4:
