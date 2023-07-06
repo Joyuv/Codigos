@@ -6,7 +6,6 @@ while True:
         break
     altura = float(input('Insira a altura desta pessoa a seguir: '))
     if altura > alturar:
-
         alturar = altura
         pessoar = pessoa
 if pessoar != 'Ninguém':
