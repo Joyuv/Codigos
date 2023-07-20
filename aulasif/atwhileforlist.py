@@ -18,5 +18,5 @@ while True:
     
 med = soma/ct
 for nomes in lista:
-    print (lista)
+    print (nomes)
 print (f'A média das alturas é {med}')
