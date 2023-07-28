@@ -41,6 +41,9 @@ def login (email, senha):
         usuario = c.fetchone()
         if usuario:
             print('Deu Certo! ')
+            buscaid = 'SELECT * FROM usuario WHERE id = %s'
+            id_usuario = (buscaid)
+            
         else:
             print('Não Deu Certo :( ')
     except Error as e:
@@ -131,23 +134,23 @@ def exibir_quimico (id_usuario):
         elif qui == 'ina' and 'inaprovaline' in qui:
             for quis in ina:
                 print(quis)
-                forma_resolução = input('Insira seu modo de resolver esta mistura: ')
-                receitas = pegador_de_receita (id_usuario, qui)
-                cadastrar_receita_personalizada (id_usuario, qui, forma_resolução )
-                print('Formas de resolução')
-                for forma in receitas:
-                    print(forma[0])
+            forma_resolução = input('Insira seu modo de resolver esta mistura: ')
+            receitas = pegador_de_receita (id_usuario, qui)
+            cadastrar_receita_personalizada (id_usuario, qui, forma_resolução )
+            print('Formas de resolução')
+            for forma in receitas:
+                print(forma[0])
         elif qui == 'bica' and 'bicaridina' in qui:
             for quis in ina:
                 print(quis)
             for quis in bica:
                 print(quis)
-                forma_resolução = input('Insira seu modo de resolver esta mistura: ')
-                receitas = pegador_de_receita (id_usuario, qui)
-                cadastrar_receita_personalizada (id_usuario, qui, forma_resolução )
-                print('Formas de resolução')
-                for forma in receitas:
-                    print(forma[0])
+            forma_resolução = input('Insira seu modo de resolver esta mistura: ')
+            receitas = pegador_de_receita (id_usuario, qui)
+            cadastrar_receita_personalizada (id_usuario, qui, forma_resolução )
+            print('Formas de resolução')
+            for forma in receitas:
+                print(forma[0])
         elif qui == 'kelo' in qui:
             for quis in kelo:
                 print(quis)
@@ -169,7 +172,7 @@ def exibir_quimico (id_usuario):
                 for forma in receitas:
                     print(forma[0])
         elif qui == 'bica' in qui:
-            for quis in kelo:
+            for quis in ina:
                 print(quis)
             for quis in bica:
                 print(quis)
@@ -226,9 +229,7 @@ def menu_principal ():
         senha = input('insira sua senha: ')
 
         id_usuario = login(email, senha)
-
-        if id_usuario is not None:
-
-            exibir_quimico(id_usuario)
+        
+        exibir_quimico(id_usuario)
 
 menu_principal ()
