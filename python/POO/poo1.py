@@ -6,7 +6,8 @@ class lapis: #criando objeto/classe lapis
         self.__ponta = ponta
 
     def getCor(self):
-        return self.__cor
+        return
+        self.__cor
 
     def setCor(self, cor): #self.cor == azul
         self.__cor = cor       #cor == preto
