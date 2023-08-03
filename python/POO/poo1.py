@@ -6,8 +6,7 @@ class lapis: #criando objeto/classe lapis
         self.__ponta = ponta
 
     def getCor(self):
-        return
-        self.__cor
+        return self.__cor
 
     def setCor(self, cor): #self.cor == azul
         self.__cor = cor       #cor == preto
@@ -34,8 +33,8 @@ l3 = lapis("azul", False, 0.7)
 l1.setCor("preto")
 
 print("cor do lápis 1",l1.getCor(), 'Ele tem tampa?', l1.getTampa(), 'O tamanho da ponta é', l1.getPonta())
-print("cor do lápis 2",l1.getCor(), 'Ele tem tampa?', l2.getTampa(), 'O tamanho da ponta é', l2.getPonta())
-print("cor do lápis 3",l1.getCor(), 'Ele tem tampa?', l3.getTampa(), 'O tamanho da ponta é', l3.getPonta())
+print("cor do lápis 2",l2.getCor(), 'Ele tem tampa?', l2.getTampa(), 'O tamanho da ponta é', l2.getPonta())
+print("cor do lápis 3",l3.getCor(), 'Ele tem tampa?', l3.getTampa(), 'O tamanho da ponta é', l3.getPonta())
 
 escolha = 1
 
