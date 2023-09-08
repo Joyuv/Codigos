@@ -16,6 +16,7 @@ class quimicos():
         
         self.__nome = nome
         self.__qui1 = qui
+        self.__receita = self.get_nome() +' \tQuim1'+ '\n\n'+ tamanho_caracteres(self.get_nome(), '=') + '\t' + self.get_qui()
 
     def get_qui (self):
         return self.__qui1
@@ -23,14 +24,14 @@ class quimicos():
         return self.__nome
 
     def get_receita(self):
-        print(self.get_nome(), self.get_qui())
+        return self.__receita
 
 class quimico2(quimicos):
 
     def __init__(self, nome, qui, qui2):
         super().__init__(nome, qui)
         self.__qui2 = qui2
-        self.__receita = '(' + self.get_nome() +' = '+ self.get_qui() +'-'+ self.get_qui2() + ')'
+        self.__receita = self.get_nome() +' \tQuim1\t\tQuim2'+ '\n\n'+ tamanho_caracteres(self.get_nome(), '=') + '\t' + self.get_qui() +'\t'+ self.get_qui2()
 
     def get_qui2(self):
         return self.__qui2
@@ -64,11 +65,13 @@ class quimico3(quimicos):
 quip1 = quimicos("Oxigenio", "oxigenio")
 quip2 = quimicos("Ferro", "ferro")
 quip3 = quimicos("Fósforo", "fósforo")
+quip4 = quimicos('Bário', 'bário')
+quip5 = quimicos('Sódio', '\tsódio')
 
 qui2 = quimico2("Qui4", quip1.get_qui(), quip3.get_qui())
 qui3 = quimico3("Bicaridina", quip1.get_qui(), quip2.get_qui(), quip3.get_qui())
 qui4 = quimico3("Qui6", quip1.get_qui(), quip2.get_qui(), qui2.get_receita_valor())
+palmeiras = quimico2("Palmeiras", quip4.get_qui(), quip5.get_qui())
 #endregion
 
-print(qui3.get_receita_valor())
-
+print(palmeiras.get_receita_valor())

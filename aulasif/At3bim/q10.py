@@ -36,7 +36,7 @@ if escolha != 'sair':
         def fazer_pergunta(self):
             return self.__fazer_pergunta
 
-        def realizar_show(self):
+        def show_de_show(self):
 
             while True:
 
@@ -62,11 +62,11 @@ if escolha != 'sair':
 #================================================================================================================================================================================
 #Propriedade de Giva
 #=======================================================================================================================================================
-#Sempre que adicionar uma pergunta nova adiciona aqui também (nome_da_variavel_pergunta_no_bloco_acima.realizar_show(OS PARENTESES SÂO IMPORTANTISSIMO))
-    pergunta1.realizar_show()
-    pergunta2.realizar_show()
-    pergunta3.realizar_show()
-#Sempre que adicionar uma pergunta nova adiciona aqui também (nome_da_variavel_pergunta_no_bloco_acima.realizar_show(OS PARENTESES SÂO IMPORTANTISSIMO))
+#Sempre que adicionar uma pergunta nova adiciona aqui também (nome_da_variavel_pergunta_no_bloco_acima.show_de_show(OS PARENTESES SÂO IMPORTANTISSIMO))
+    pergunta1.show_de_show()
+    pergunta2.show_de_show()
+    pergunta3.show_de_show()
+#Sempre que adicionar uma pergunta nova adiciona aqui também (nome_da_variavel_pergunta_no_bloco_acima.show_de_show(OS PARENTESES SÂO IMPORTANTISSIMO))
 #=======================================================================================================================================================
 
     print(f'Acabou, você acaba de ganhar R${jogador1.get_pontos()} em barras de ouro que valem mais do que dinheiro.')
