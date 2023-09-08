@@ -14,14 +14,7 @@ for x in lista1:
 
         if x == y:
             
-            for w in lista3:
-            
-                if x != w:
-                    lista3.append(y)
-
-                elif x == w:
-                    ezequiel_corno = 1
-
+            lista3.append(y)
 
 print('Lista 3\n\n')
 
