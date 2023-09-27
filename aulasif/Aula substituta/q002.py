@@ -9,6 +9,4 @@ for x in range (0,5):
 
     soma = (lista1[x] * lista2[x]) + soma
 
-print(lista1)
-print(lista2)
-print(soma)
+print(lista1), print(soma), print(lista2)
