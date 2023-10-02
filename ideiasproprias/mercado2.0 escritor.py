@@ -1,5 +1,5 @@
 from itertools import count
-
+from random import randint
 class produto():
     id_obj = count()
 
@@ -47,7 +47,8 @@ tap = 0
 sacola = ''
 
 def receita(sacola, tap):
-    with open('receita.txt', 'w') as f:
+    num_receita = randint(0,1000000)
+    with open(f'receita{num_receita}.txt', 'x') as f:
         f.write('====\t\t      Receita  \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
         f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
         f.write('====\t\t      Produtos \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
@@ -55,11 +56,12 @@ def receita(sacola, tap):
         f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
         f.write(f'====\t    Total a pagar: {tap:.2f} \t====\n')
 
-produto_esc = 'nada'
+
 opcao = 0
 
 while opcao != 2:
 
+    produto_esc = 'nada'
     print('\n\t---Menu---\n\n1-Iniciar Sistema\n2-Sair Do Sistema\n')
     opcao = int(input('Insira a opção: '))
     print()
