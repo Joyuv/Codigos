@@ -55,7 +55,7 @@ def receita(sacola, tap):
         f.write(f'{sacola}====\t\t        \t\t\t\t====\n')
         f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
         f.write(f'====\t    Total a pagar: {tap:.2f} \t====\n')
-
+    sacola = ''
 
 opcao = 0
 
