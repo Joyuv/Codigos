@@ -39,8 +39,8 @@ class produto():
 
 #region produtos
 maca = produto('Maçã', 0.79, 'unidade')
-feijao = produto('Feijão', 5.99, 'pacote')
-leite = produto('Leite', 3.99, 'caixa')
+feijao = produto('Feij.', 5.99, 'pacote')
+leite = produto('Leit.', 3.99, 'caixa')
 #endregion
 
 tap = 0

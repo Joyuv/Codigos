@@ -1,0 +1,13 @@
+====		      Receita  			====
+====		    				    ====
+====	Mercadinho São Vincente 	====
+====		        				====
+====		      Produtos 			====
+====		    				    ====
+==== Maçã 		         0.79 * 5	====
+==== Feijão 		         5.99 * 7	====
+==== Leite 		         3.99 * 10	====
+====		        				====
+====	Mercadinho São Vincente 	====
+====		        				====
+====	    Total a pagar: 85.78 	====
