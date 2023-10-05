@@ -39,8 +39,10 @@ class produto():
 
 #region produtos
 maca = produto('Maçã', 0.79, 'unidade')
+abacaxi = produto('Abacx.', 6.99, 'unidade')
 feijao = produto('Feij.', 5.99, 'pacote')
 leite = produto('Leit.', 3.99, 'caixa')
+leite_em_po = produto('Leipo', 4.99, 'lata')
 #endregion
 
 tap = 0
@@ -88,7 +90,12 @@ while opcao != 2:
             elif produto_esc == 'leite':
                 quant = int(input('Insira a quantidade: '))
                 tap, sacola = leite.escolha_de_produto(sacola, tap, quant)
-
+            elif produto_esc == 'abacaxi':
+                quant = int(input('Insira a quantidade: '))
+                tap, sacola = abacaxi.escolha_de_produto(sacola, tap, quant)
+            elif produto_esc == 'leite em pó':
+                quant = int(input('Insira a quantidade: '))
+                tap, sacola = leite_em_po.escolha_de_produto(sacola, tap, quant)
             else:
 
                 print('Produto desconhecido, tente novamente.\n')
