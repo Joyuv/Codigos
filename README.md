@@ -1,1 +1,1 @@
-# Codigos this folder contains all of my codes. currenty on learning process.
+# this folder contains all of my codes. currently on learning process. all of the codes in this folder are for study purposes.
