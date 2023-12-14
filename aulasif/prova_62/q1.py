@@ -2,6 +2,7 @@ a = int(input('insira o valor de linhas da matriz: '))
 b = int(input('insira o valor de culunas da matriz: '))
 m = []
 
+#region Média e comparação
 for x in range(a):
     linha = []
     for y in range(b):
@@ -29,6 +30,8 @@ for x in range(0, len(m)):
 med = med/cont
 print(f'A média dos {cont} numeros na matriz é: {med}')
 print(f'O maior número par da sua matriz é: {maiorp}')
+#endregion
+#region Transposição
 
 novam = []
 
@@ -41,3 +44,4 @@ for x in range(b):
 
 print(f'A matriz transposta é: {novam}')
     
+#endregion
