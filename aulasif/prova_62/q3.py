@@ -15,10 +15,15 @@ while True:
         for x in range(len(bib)):
             for y in range(len(bib[x])):
                 ref = bib[x][y] 
+                if ref.split(' ')[0] == pesq.split(' ')[0]:
+                    pesqs = 2
+                    referror = ref
                 if ref.lower() == pesq.lower():
                     print(f'O livro {pesq} foi encontrado na prateleira {x+1} posição {y+1}')
                     pesqs = 1
-        if pesqs == 0:
+        if pesqs == 2:
+            print(f'Voce por acaso quis dizer ({referror})?')
+        elif pesqs == 0:
             print(f'O livro {pesq} não foi encontrado :(')
 
     if zezo == 2:
