@@ -51,12 +51,12 @@ sacola = ''
 def receita(sacola, tap):
     num_receita = randint(0,1000000)
     with open(f'receita{num_receita}.txt', 'x') as f:
-        f.write('====\t\t      Receita  \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
+        f.write('====\t\t    Receita  \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
         f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
         f.write('====\t\t      Produtos \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
         f.write(f'{sacola}====\t\t        \t\t\t\t====\n')
         f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
-        f.write(f'====\t    Total a pagar: {tap:.2f} \t====\n')
+        f.write(f'====\t Total a pagar: {tap:.2f}   \t====\n')
     sacola = ''
 
 opcao = 0
