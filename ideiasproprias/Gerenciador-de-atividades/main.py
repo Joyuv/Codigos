@@ -1,5 +1,7 @@
 import info
 from datetime import date
+import pickle
+
 
 arquivo_open_r = open('/home/giva/Codigos/ideiasproprias/Gerenciador-de-atividades/info.py', 'r')
 
@@ -37,10 +39,15 @@ def adicionar():
     data_e = input('Insira o data de entrega: ')
 
 
-    quant = info.quant
-    arquivo_open_w = open('/home/giva/Codigos/ideiasproprias/Gerenciador-de-atividades/info.py', 'a')
-    arquivo_open_w.write()
-    arquivo_open_w.close()
+    # quant = info.quant
+    quant = 1
+    # data = [quant]
+    # path = 'data.pickle'
+    # with open(path, 'wb') as file:
+    #     pickle.dump(data, file)
+    # arquivo_open_w = open('/home/giva/Codigos/ideiasproprias/Gerenciador-de-atividades/info.py', 'a')
+    # arquivo_open_w.write()
+    # arquivo_open_w.close()
 
 def menu():
     print('''               Menu                
