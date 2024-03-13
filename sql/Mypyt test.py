@@ -102,7 +102,7 @@ def exibir_quimico (id_usuario):
         dexp = ['\n(dex)', ir, car]
         trico = ['\n(inaprovaline)', '\n(dylovene)']
         #casos
-        if qui == 'dex' and 'dexalin' in qui:
+        if qui == 'dex' or qui == 'dexalin':
             for quis in dex:
                 print(quis)
                 forma_resolução = input('Insira seu modo de resolver esta mistura: ')
