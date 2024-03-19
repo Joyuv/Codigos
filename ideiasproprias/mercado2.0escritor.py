@@ -32,7 +32,7 @@ class produto():
         print(f'\nVocê comprou: {quant} {self.get_terminacao()}(s) de {self.get_nome_produto()}\n')
 
         tap += self.get_preco() * quant
-        sacola += f'{self.get_nome()}\t\t         {self.get_preco()} * {quant}\t====\n'
+        sacola += f'{self.get_nome()}\t\t         {self.get_preco()} * {quant}\t===='
 
         return tap, sacola
         
@@ -51,12 +51,20 @@ sacola = ''
 def receita(sacola, tap):
     num_receita = randint(0,1000000)
     with open(f'receita{num_receita}.txt', 'x') as f:
-        f.write('====\t\t    Receita  \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
-        f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
-        f.write('====\t\t      Produtos \t\t\t====\n====\t\t    \t\t\t\t    ====\n')
-        f.write(f'{sacola}====\t\t        \t\t\t\t====\n')
-        f.write('====\tMercadinho São Vincente \t====\n====\t\t        \t\t\t\t====\n')
-        f.write(f'====\t Total a pagar: {tap:.2f}   \t====\n')
+        f.write(f'''
+====                                ==== 
+====             Receita            ====
+====                                ====    
+====     Mercadinho São Vincente    ====
+====                                ====
+====             Produtos           ====
+====                                ====
+{sacola}
+====                                ====
+====     Mercadinho São Vincente    ====
+====                                ====
+====      Total a pagar: {tap:.2f}       ====
+====                                ====''')
     sacola = ''
 
 opcao = 0
