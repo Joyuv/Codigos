@@ -5,6 +5,6 @@ while True:
     if nome == 'pare':
         break
     numero = input(f'insira o numero de {nome}: ')
-    arq.write(f'{nome} : {numero}\n')
+    arq.write(f'{nome} : {numero}')
 
 arq.close()
