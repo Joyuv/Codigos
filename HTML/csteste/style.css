@@ -1,0 +1,13 @@
+p{
+    font-size: 200px;
+    font-family:sans-serif;
+    text-align: center;
+    display: inline;
+}
+p:hover{
+    cursor:pointer;
+}
+#titulo{
+    user-select: none;
+    -moz-user-select: none;
+}
