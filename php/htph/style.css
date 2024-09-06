@@ -1,0 +1,15 @@
+form{
+    input{
+        box-shadow: 1px 1px black;
+    }
+}
+span{
+    display: inline-block;
+    display: flexbox;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 500px;
+}
+body{
+    text-align: center;
+}
